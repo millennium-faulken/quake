@@ -1,12 +1,12 @@
-main {
+body {
     text-align: center;
 }
 
-h1 {
+main h1 {
     margin-bottom: 0;
 }
 
-h3 {
+main h3 {
     margin-top: 0;
 }
 
