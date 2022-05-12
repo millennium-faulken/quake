@@ -2,11 +2,11 @@ body {
     text-align: center;
 }
 
-main h1 {
+header h1 {
     margin-bottom: 0;
 }
 
-main h3 {
+header h3 {
     margin-top: 0;
 }
 
