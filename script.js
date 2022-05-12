@@ -1,6 +1,5 @@
 $(document).ready(function () {
   getQuakes();
-  // getFireball();
 
   function getQuakes() {
     $.ajax({
@@ -33,7 +32,7 @@ $(document).ready(function () {
           return $("#quakes").append(item);
         });
       },
-      error: function (xhr, status, error) {
+      error: function (status) {
         console.log(status);
       },
     });
