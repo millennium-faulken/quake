@@ -14,15 +14,19 @@
     <main>
       <header>
         <h1>Recent Earthquakes</h1>
-        <h3>(Magnitude 5 or greater)</h3>
+        <h3>(Magnitude 5.5 or greater)</h3>
       </header>
-      <table id="quakes">
-        <tr class="headers">
-          <th>Location</th>
-          <th>Magnitude</th>
-          <th>Date & Time</th>
-        </tr>
-      </table>
+        <table>
+          <thead>
+            <tr class="headers">
+              <th class="place">Location</th>
+              <th class="mag">Magnitude</th>
+              <th class="time">Date & Time</th>
+            </tr>
+          </thead>
+          <tbody id="quakes"></tbody>
+        </table>
+      </div>
     </main>
     <script
       type="text/javascript"

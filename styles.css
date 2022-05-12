@@ -11,9 +11,12 @@ header h3 {
 }
 
 table {
-  /* font-family: arial, sans-serif; */
+  font-family: arial, sans-serif;
   border-collapse: collapse;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
 }
 
 td,
@@ -21,4 +24,17 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+.mag {
+  text-align: center;
+  width: 100px;
+}
+
+.time {
+  width: 200px;
+}
+
+.place {
+  width: 400px;
 }

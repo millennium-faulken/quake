@@ -26,7 +26,7 @@ $(document).ready(function () {
               '<td class="mag">' +
               quake.properties.mag +
               "</td>" +
-              '<td class="mag">' +
+              '<td class="time">' +
               date.format(quake.properties.time) +
               "</td>" +
               "<tr/>"
