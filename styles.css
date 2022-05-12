@@ -1,12 +1,18 @@
-body {
-  align-items: center;
+main {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
 }
 
 table {
-  font-family: arial, sans-serif;
+  /* font-family: arial, sans-serif; */
   border-collapse: collapse;
-  max-width: 1600px;
-  align-items: center;
   margin: auto;
 }
 
