@@ -5,18 +5,12 @@
 
 // echo $getQuake;
 
-$getUrl = "https://www.expensify.com/api?command=Get";
+$getUrl = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=5";
 
 $get = curl_init();
 
-$getFields = http_build_query(array(
-    "authToken" =>  $_COOKIE['user'],
-    "returnValueList" => 'transactionList'
-));
-
 curl_setopt($get, CURLOPT_URL, $getUrl);
 curl_setopt($get, CURLOPT_POST, 1);
-curl_setopt($get, CURLOPT_POSTFIELDS, $getFields);
 curl_setopt($get, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($get, CURLOPT_SSL_VERIFYPEER, 0);
 
