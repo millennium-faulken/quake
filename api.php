@@ -1,4 +1,5 @@
 <?php
+
 $getUrl = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=5.5";
 
 $get = curl_init();

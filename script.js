@@ -7,7 +7,6 @@ $(document).ready(function () {
       type: "POST",
       url: "api.php",
       success: function (response) {
-        console.log(response);
         JSON.parse(response).features.map(function (quake) {
           var item = [];
           const date = new Intl.DateTimeFormat("en-US", {
