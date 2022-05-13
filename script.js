@@ -5,6 +5,14 @@ $(document).ready(function () {
     $.ajax({
       type: "POST",
       url: "api.php",
+      beforeSend: function () {
+        $("#loading").show();
+        $("#table").hide();
+      },
+      complete: function () {
+        $("#loading").hide();
+        $("#table").show();
+      },
       success: function (response) {
         JSON.parse(response).features.map(function (quake) {
           var item = [];

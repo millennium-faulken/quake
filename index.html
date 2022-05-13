@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>Quake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
@@ -11,16 +21,22 @@
         <h1>Recent Earthquakes</h1>
         <h3>(Magnitude 5.5 or greater)</h3>
       </header>
-        <table>
-          <thead>
-            <tr class="headers">
-              <th class="place">Location</th>
-              <th class="mag">Magnitude</th>
-              <th class="time">Date & Time</th>
-            </tr>
-          </thead>
-          <tbody id="quakes"></tbody>
-        </table>
+      <div id="loading" class="loading"></div>
+      <table id="table">
+        <thead>
+          <tr class="headers">
+            <th class="place">Location</th>
+            <th class="mag">Magnitude</th>
+            <th class="time">Date & Time (UTC)</th>
+          </tr>
+        </thead>
+        <tbody id="quakes"></tbody>
+      </table>
+      <div class="source">
+        Source:
+        <a href="https://www.usgs.gov" target="_blank" rel="noopener"
+          >usgs.gov</a
+        >
       </div>
     </main>
     <script
