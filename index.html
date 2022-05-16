@@ -19,7 +19,23 @@
     <main>
       <header>
         <h1>Recent Earthquakes</h1>
-        <h3>(Magnitude 5.5 or greater)</h3>
+        <div class="search">
+          <p>
+            Enter a number to search for all earthquakes in the last month of
+            <br/>that magnitude or greater (0 - 10)
+          </p>
+          <input
+            class="magInput"
+            required
+            type="number"
+            pattern="[0-9]"
+            placeholder="7.0"
+            name="mag"
+            id="mag"
+          />
+          <input class="magSubmit" type="button" id="submit" value="Submit" />
+        </div>
+        <hr />
       </header>
       <div id="loading" class="loading"></div>
       <table id="table">
