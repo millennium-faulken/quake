@@ -85,8 +85,8 @@ th {
   animation: spin 2s linear infinite;
 }
 
-input{
-  text-align:center;
+input {
+  text-align: center;
 }
 
 .search {
@@ -101,7 +101,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 

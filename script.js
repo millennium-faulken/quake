@@ -7,8 +7,6 @@ $(document).ready(function () {
 
     $("#submit").click(function () {
       var mag = $("#mag").val();
-      console.log($("#mag").val());
-
       $.ajax({
         type: "POST",
         url: "api.php",
